@@ -10,27 +10,29 @@ export default function SubscribeForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setIsSubmitting(true);
+        setMessage('');
+
+        console.log("Sending request to:", process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL);
 
         try {
-            const response = await fetch(
-                process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL,
-                {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ email, name }),
-                }
-            );
+            const response = await fetch(process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email, name }),
+            });
 
-            const text = await response.text();
+            const text = await response.text(); // Přečti odpověď jako text
+            console.log("Response:", text);
 
-            if (text === 'Success') {
+            if (response.ok && text.includes("Success")) {
                 setMessage('Thanks for subscribing! 🐕');
                 setEmail('');
                 setName('');
             } else {
-                setMessage('Failed to subscribe. Please try again.');
+                setMessage('Failed to subscribe. Response: ' + text);
             }
         } catch (error) {
+            console.error("Fetch error:", error);
             setMessage('An error occurred. Please try again later.');
         } finally {
             setIsSubmitting(false);

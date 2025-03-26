@@ -2,6 +2,7 @@ import Head from 'next/head';
 import HeroSection from '../components/HeroSection';
 import FeatureCard from '../components/FeatureCard';
 import ImageTextSection from '../components/ImageTextSection';
+import SubscribeForm from "@/components/SubscribeForm";
 
 export default function Home() {
     const features = [
@@ -37,6 +38,7 @@ export default function Home() {
                 ))}
             </div>
             <ImageTextSection />
+            <SubscribeForm />
         </div>
     );
 }

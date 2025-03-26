@@ -21,7 +21,9 @@ export default function SubscribeForm() {
                 }
             );
 
-            if (response.ok) {
+            const text = await response.text();
+
+            if (text === 'Success') {
                 setMessage('Thanks for subscribing! 🐕');
                 setEmail('');
                 setName('');

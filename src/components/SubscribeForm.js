@@ -17,11 +17,14 @@ export default function SubscribeForm() {
         try {
             const response = await fetch(process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL, {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
+                headers: {
+                    'Content-Type': 'application/json',
+                },
                 body: JSON.stringify({ email, name }),
+                mode: 'cors',
             });
 
-            const text = await response.text(); // Přečti odpověď jako text
+            const text = await response.text();
             console.log("Response:", text);
 
             if (response.ok && text.includes("Success")) {

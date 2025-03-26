@@ -14,14 +14,15 @@ export default function SubscribeForm() {
 
         console.log("Sending request to:", process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL);
 
+        // Vytvoření FormData objektu
+        const formData = new FormData();
+        formData.append("email", email);
+        formData.append("name", name);
+
         try {
             const response = await fetch(process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL, {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ email, name }),
-                mode: 'cors',
+                body: formData, // Posíláme jako FormData
             });
 
             const text = await response.text();

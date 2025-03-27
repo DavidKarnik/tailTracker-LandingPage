@@ -56,7 +56,7 @@ export default function SubscribeForm() {
                     onChange={(e) => setName(e.target.value)}
                 />
                 <button type="submit" disabled={isSubmitting}>
-                    {isSubmitting ? 'Odesílám...' : 'Přihlásit se'}
+                    {isSubmitting ? 'Odesílám...' : 'Odesláno'}
                 </button>
             </form>
             {message && (

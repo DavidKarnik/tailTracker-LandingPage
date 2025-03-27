@@ -1,0 +1,40 @@
+/* src/styles/Features.module.css */
+.featuresSection {
+    padding: 4rem 1rem;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.sectionTitle {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.sectionTitle::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: #FF6B00;
+}
+
+.featuresContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+    .featuresContainer {
+        grid-template-columns: 1fr;
+    }
+}

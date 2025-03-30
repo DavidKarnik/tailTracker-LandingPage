@@ -1,0 +1,24 @@
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #000;
+}
+
+.text {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.notifyButton {
+    background-color: orange;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+}

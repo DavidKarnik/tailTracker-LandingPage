@@ -41,7 +41,7 @@ export default function SubscribeForm() {
     return (
         <div className={styles.formContainer}>
             <h3>Odebírat novinky</h3>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} id="subscribe-form">
                 <input
                     type="email"
                     placeholder="Váš email*"

@@ -42,7 +42,7 @@ const Features = () => {
     ];
 
     return (
-        <section className={styles.featuresSection}>
+        <section className={styles.featuresSection} id="features">
             <h2 className={styles.sectionTitle}>Key Features</h2>
             <div className={styles.featuresContainer}>
                 {features.map((feature, index) => (

@@ -40,23 +40,23 @@ export default function SubscribeForm() {
 
     return (
         <div className={styles.formContainer}>
-            <h3>Odebírat novinky</h3>
+            <h3>Dáme Vám vědět, až bude produkt připravený!</h3>
             <form onSubmit={handleSubmit} id="subscribe-form">
                 <input
                     type="email"
-                    placeholder="Váš email*"
+                    placeholder="E-mail*"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
                 />
                 <input
                     type="text"
-                    placeholder="Vaše jméno (nepovinné)"
+                    placeholder="Jméno (nepovinné)"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                 />
                 <button type="submit" disabled={isSubmitting}>
-                    {isSubmitting ? 'Odesílám...' : 'Odesláno'}
+                    {isSubmitting ? 'Odesílám...' : 'Odeslat'}
                 </button>
             </form>
             {message && (

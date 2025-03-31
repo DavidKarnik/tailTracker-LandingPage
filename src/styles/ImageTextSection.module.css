@@ -6,6 +6,7 @@
 
 .slopedImage {
     flex: 1;
+    background-color: #4CAF50;
 }
 
 .slopedImage img {

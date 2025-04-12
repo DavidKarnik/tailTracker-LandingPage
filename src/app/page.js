@@ -4,6 +4,7 @@ import ImageTextSection from "@/components/ImageTextSection";
 import SubscribeForm from "@/components/SubscribeForm";
 import Head from "next/head";
 import TopBanner from "@/components/TopBanner";
+import Product from "@/components/Product";
 
 export default function Home() {
     return (
@@ -13,6 +14,7 @@ export default function Home() {
             </Head>
             <TopBanner/>
             <HeroSection/>
+            <Product/>
             <Features/>
             <ImageTextSection/>
             <SubscribeForm/>

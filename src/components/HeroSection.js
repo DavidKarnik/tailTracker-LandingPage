@@ -4,7 +4,7 @@ import styles from '../styles/HeroSection.module.css';
 export default function HeroSection() {
 
     const scrollToNextSection = () => {
-        const element = document.getElementById("features");
+        const element = document.getElementById("product");
         if (element) {
             element.scrollIntoView({behavior: "smooth"});
         }

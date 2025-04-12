@@ -29,7 +29,7 @@
 .container {
     width: 35vw;
     height: 93vh;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     display: flex;
     align-items: center;     /* vertikální zarovnání */
     justify-content: center; /* horizontální zarovnání */

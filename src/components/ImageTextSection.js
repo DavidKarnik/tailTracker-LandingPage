@@ -4,7 +4,8 @@ export default function ImageTextSection() {
     return (
         <section className={styles.section}>
             <div className={styles.slopedImage}>
-                <img src="/images/dogB.jpg" alt="Happy Dog"/>
+                {/*<img src="/images/dogB.jpg" alt="Happy Dog"/>*/}
+                <img src="/images/TailTracker_GoldenRetriever.png" alt="Happy Dog"/>
             </div>
             <div className={styles.textContent}>
                 <h2>Dobrodružství má v krvi</h2>

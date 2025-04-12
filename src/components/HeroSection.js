@@ -14,14 +14,11 @@ export default function HeroSection() {
         <section className={styles.hero}>
             <div className={styles.container}>
                 <div className={styles.heroText}>
-                    <h1>TailTracker</h1>
-                    <p className={styles.motto}>Pro bezpečí a zdraví vašeho psa – pro váš klid.</p>
-                    <p>Nejchytřejší psí obojek na našem trhu. Zaměřen na bezpečí a zdraví psa - veškeré statistiky přímo
-                        ve Vaší kapse.</p>
-                    <button className={styles.ctaButton}>Předobjednat</button>
-                </div>
-                <div className={styles.heroImage}>
-                    <img src="/images/dogA.jpg" alt="Smart Dog Collar"/>
+                    <img src="/images/TailTracker_logo_white.png" alt="logo"/>
+                    <p className={styles.motto}>Pro bezpečí a zdraví vašeho psa</p>
+                    <p className={styles.motto}>– pro váš klid.</p>
+                    {/*<p className={styles.infoText}>Nejchytřejší psí obojek na našem trhu. Zaměřen na bezpečí a zdraví psa - veškeré statistiky v kapse.</p>*/}
+                    {/*<button className={styles.ctaButton}>Předobjednat</button>*/}
                 </div>
             </div>
 

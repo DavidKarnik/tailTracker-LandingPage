@@ -1,63 +1,94 @@
 .hero {
-    background: linear-gradient(135deg, #e0e0e0 0%, #e3be87 100%);
-    padding: 4rem 2rem;
+    /*background: url('/images/TailTracker_Dalmatian.png') center center / cover no-repeat;*/
+    background: url('/images/TailTracker_BorderCollie.png') center top / cover no-repeat;
+    position: relative;
+    /*padding: 4rem 2rem;*/
     height: 93vh;
+    color: white;
+    overflow: hidden;
 }
 
+/*.hero::before {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    top: 0; left: 0; right: 0; bottom: 0;*/
+/*    background: rgba(0, 0, 0, 0.5);*/
+/*    z-index: 1;*/
+/*}*/
+
+/*.container {*/
+/*    height: 93vh;*/
+/*    width: 50%;*/
+/*    background: rgba(0, 0, 0, 0.5);*/
+/*    !*margin: 7rem 0 0 10rem;*!*/
+/*    position: relative;*/
+/*    z-index: 2;*/
+/*    max-width: 400px;*/
+/*}*/
+
 .container {
+    width: 35vw;
+    height: 93vh;
+    background: rgba(0, 0, 0, 0.5);
     display: flex;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    align-items: center;     /* vertikální zarovnání */
+    justify-content: center; /* horizontální zarovnání */
+    z-index: 2;
+    position: relative;
+    padding: 0 2rem;
+
 }
 
 .heroText {
-    flex: 1;
-    margin-right: 4rem;
+    display: flex;
+    align-items: center;     /* vertikální zarovnání */
+    flex-direction: column;
+    /*gap: 3.0rem;*/
 }
 
-.heroText h1 {
-    font-size: 3rem;
-    color: #333;
-    margin-bottom: 0.5rem;
+.heroText img {
+    width: 300px;
+    height: auto;
+    padding-bottom: 3.0rem;
 }
+
+/*.heroText h1 {*/
+/*    font-size: 3rem;*/
+/*    color: #333;*/
+/*    margin-bottom: 0.5rem;*/
+/*}*/
 
 .motto {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     color: #FF6B00;
     font-style: italic;
 }
 
-.heroText h2 {
-    font-size: 2rem;
-    color: #4CAF50;
-    margin: 1rem 0;
+.infoText {
+    font-size: 1.4rem;
 }
 
-.heroImage {
-    flex: 1;
-}
+/*.heroText h2 {*/
+/*    font-size: 2rem;*/
+/*    color: #4CAF50;*/
+/*    margin: 1rem 0;*/
+/*}*/
 
-.heroImage img {
-    width: 100%;
-    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
-}
+/*.ctaButton {*/
+/*    margin-top: 15px;*/
+/*    background: #FF6B00;*/
+/*    color: white;*/
+/*    border: none;*/
+/*    padding: 0.8rem 2rem;*/
+/*    font-size: 1rem;*/
+/*    border-radius: 4px;*/
+/*    cursor: pointer;*/
+/*    transition: transform 0.2s;*/
+/*}*/
 
-.ctaButton {
-    margin-top: 15px;
-    background: #FF6B00;
-    color: white;
-    border: none;
-    padding: 0.8rem 2rem;
-    font-size: 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-
-.ctaButton:hover {
-    transform: translateY(-2px);
-}
+/*.ctaButton:hover {*/
+/*    transform: translateY(-2px);*/
+/*}*/
 
 .scrollArrow {
     position: absolute;

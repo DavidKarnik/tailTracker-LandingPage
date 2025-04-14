@@ -38,3 +38,13 @@
     margin: 0.5rem 0;
     font-size: 1.1rem;
 }
+
+@media (max-width: 800px) {
+    .section {
+        margin: 0;
+        flex-direction: column;
+    }
+    .slopedImage {
+        /*display: none;*/
+    }
+}

@@ -33,7 +33,11 @@
     padding: 0 1rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
+    .sectionTitle {
+        font-size: 1.8rem;
+    }
+
     .featuresContainer {
         grid-template-columns: 1fr;
     }
